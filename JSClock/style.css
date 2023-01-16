@@ -1,0 +1,17 @@
+body {
+    background: black;
+}
+
+.clockStyle {
+    font-size: 200px;
+    text-align: center;
+    text-decoration-style: wavy;
+    color: aqua;
+
+}
+
+.title {
+    text-align: center;
+    color: red;
+
+}
