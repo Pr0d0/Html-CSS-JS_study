@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="Background">
+      <h1>STOPWATCH</h1>
+      <h2>VANILLA JAVASCRIPT STOPWATCH</h2>
+      <div>
+          <span id="m">00</span>:<span id="s">00</span>:<span id="ms">00</span>
+      </div>
+      <div>
+          <input class="buttonStyle" id="startButton" type="button" value="start" onclick="startButton()">
+          <input class="buttonStyle" id="stopButton" type="button" value="stop" onclick="stopButton()">
+          <input class="buttonStyle" id="resetButton" type="button" value="reset" onclick="resetButton()">
+      </div>
+  </div>
+  <script src="logic.js"></script>
+</body>
+</html>
