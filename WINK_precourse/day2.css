@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+.main {
+  font-family: "Black Han Sans", sans-serif;
+  background-color: yellow;
+  width: 100%;
+  height: 600px;
+  margin: 30px;
+  background-image: url(https://postfiles.pstatic.net/MjAyMjA3MjNfMjMw/MDAxNjU4NTQxMTk2ODUz.T0GXMtM8u-Yz31Skh9rn4fVdwYLF5jgdeTFzH7vokpsg.sZtp8_36ZOlxJmC46Vu7ezWDDCtfiybuUjAxO_jHjHIg.JPEG.ymtlfet/IMG_5042.jpg?type=w966);
+  /* 위에 걸 쓰면 이미지가 반복됨 따라서 반복을 취소해야함.*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex; /* 기본적으로 가로로 정렬 됨*/
+  background-color: black;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.item {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}

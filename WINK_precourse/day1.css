@@ -1,0 +1,31 @@
+/* webgradients.com : 배경그라데이션 이쁜 색 사이트 */
+
+body {
+  text-align: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  color: white;
+}
+
+.profile-title h1 {
+  width: 100vw;
+  height: 100vh;
+  line-height: 100vh; /* 줄 간격 */
+  font-size: 50px;
+}
+
+.profile-info {
+  margin-bottom: 70px;
+}
+
+.profile-info ul li {
+  margin-bottom: 30px;
+  list-style: none; /* li 점 없애기 */
+  font-size: 20px;
+}
+
+.profile-footer h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="logic.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="todo_list">
+      <div class="todo_header">
+        <header>
+          <h1 class="date">2023년 2월 22일</h1>
+          <h2 class="day">화요일</h2>
+          <h3>할 일 <span>N</span>개 남음</h3>
+        </header>
+      </div>
+      <div id="todo_content">
+        <div class="todo_items">
+          <input type="checkbox" />아침 산책
+          <input type="button" value="❌" onclick="" />
+        </div>
+        <div class="todo_items">
+          <input type="checkbox" />오늘의 뉴스 읽기
+          <input type="button" value="❌" onclick="" />
+        </div>
+      </div>
+      <footer>
+        <input type="text" placeholder="할 일을 입력해주세요." />
+        <input type="button" value="+" onclick="add(this)" />
+      </footer>
+    </div>
+  </body>
+</html>
