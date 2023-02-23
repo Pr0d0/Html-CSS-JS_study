@@ -1,107 +1,113 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(155, 155, 155);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #e9ecef;
 }
 
-.todo_list {
+.todo-container {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 600px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4); /* rgba(rgb,짙은 정도)*/
+  width: 512px;
+  height: 768px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04); /* rgba(rgb,짙은 정도)*/
 }
 
-.todo_header {
-  border-bottom: solid 1px gray;
+.todo-container .todo-header {
+  border-bottom: 1px solid #e9ecef;
   padding: 40px 30px; /*padding: 위아래 양옆*/
   padding-bottom: 0;
 }
 
-.todo_header h1 {
+.todo-header h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 36px;
   color: #343a40;
 }
 
-.todo_header .day {
+.todo-header .day {
   margin-top: 4px;
   color: #868e96;
-  font-weight: 300;
   font-size: 21px;
+  font-weight: 300;
 }
 
-.todo_header h3 {
+.todo-header h3 {
   color: #20c997;
   font-size: 18px;
   margin-top: 40px;
 }
 
-#todo_content {
-  display: flex;
-  flex-direction: column;
+.todo-container .todo-content {
+  overflow-y: auto;
   padding: 40px 30px;
   flex: 1; /* 여백 채우기 */
   overflow-y: auto; /* 화면 넘어가면 스크롤바 생성 */
 }
 
-#todo_content .todo_items {
+.todo-content .todo-item {
   display: flex;
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 21px;
+  color: #495057;
 }
 
 /* input태그 css 선택 */
-.todo_items input[type="checkbox"] {
+.todo-item input[type="checkbox"] {
   margin-right: 20px;
 }
 
-.todo_items input[type="button"] {
+.todo-item input[type="button"] {
   all: unset; /* css 기본값 다 사라짐 */
+  font-size: 18px;
+  cursor: pointer;
   margin-left: auto; /* 오른쪽으로 달라붙게 할 때 쓰는 속성 */
 }
 
-.todo_list footer {
-  background-color: #f8f9fa;
+.todo-container footer {
+  background: #f8f9fa;
   display: flex;
+  justify-self: flex-end;
   flex-direction: column; /* display 수직 정렬 */
   align-items: center; /* item 수직 정렬 */
-  border-top: solid 1px gray;
+  border-top: 1px solid #e9ecef;
+  padding-top: 30px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
 
-.todo_list footer input[type="text"] {
+.todo-container footer input[type="text"] {
   padding: 12px;
   border-radius: 4px;
-  border: solid 1px #dee2e6;
+  border: 1px solid #dee2e6;
   width: 80%; /* 부모 태그의 80% 크기 */
+  outline: none; /* text 클릭 시 테두리 없애기 */
   font-size: 18px;
   margin-bottom: 30px;
-  margin-top: 15px;
-  outline: none; /* text박스 클릭 시 아웃라인 테두리 삭제 */
 }
 
-.todo_list footer input[type="button"] {
-  all: unset;
+.todo-container footer input[type="button"] {
+  all: unset; /* 모든 설정 없애기! */
   display: flex;
   width: 60px;
   height: 60px;
-  background-color: #38d9a9;
+  margin-bottom: -25px;
+  background: #38d9a9;
   justify-content: center;
   align-items: center;
   font-size: 56px;
   font-weight: 400;
+  color: #ffffff;
   border-radius: 100%;
-  color: white;
-  margin-bottom: -25px;
-  cursor: pointer; /* 커서를 올리면 마우스포인터가 바뀜 */
-  line-height: 0;
+  cursor: pointer; /* 마우스커서를 올리면 포인터가 바뀜 */
+}
+
+.done {
+  text-decoration-line: line-through; /* 체크 시 글에 줄 긋기 */
 }
