@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CloneCoding</title>
+    <link rel="stylesheet" href="logIn.css" />
+    <script src="logIn.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="logInContent">
+        <a href="#"><img src="logo.png" /></a>
+        <div id="mainLogIn">
+          <input
+            type="text"
+            placeholder="전화번호, 사용자 이름 또는 이메일"
+            onchange="handleInput(event)"
+          />
+          <input
+            type="password"
+            placeholder="비밀번호"
+            onchange="handleInput(event)"
+          />
+          <input id="logIn_button" type="button" value="로그인" />
+        </div>
+        <div id="extraLogIn">
+          <a href="https://facebook.com" target="_blank"
+            ><img src="facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/accounts/password/reset/"
+            >비밀번호를 잊으셨나요?</a
+          >
+        </div>
+      </div>
+      <div id="addAccount">
+        계정이 없으신가요? <a href="signup.html">가입하기</a>
+      </div>
+      <span style="margin: 10px">앱을 다운로드 하세요.</span>
+      <div id="link">
+        <a href="#"><img src="app-store.png" /></a>
+        <a href="#"><img src="google-play.png" /></a>
+      </div>
+
+      <footer>
+        <a href="#">Meta</a>
+        <a href="#">채용정보</a>
+        <a href="#">도움말</a>
+        <a href="#">API</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">약관</a>
+        <a href="#">인기 계정</a>
+        <a href="#">위치</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">연락처 업로드 & 비사용자</a>
+      </footer>
+    </div>
+  </body>
+</html>
