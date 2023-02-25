@@ -10,28 +10,34 @@
   </head>
   <body>
     <div id="main">
-      <div id="logInContent">
+      <div id="mainContent">
         <a href="#"><img src="logo.png" /></a>
-        <div id="mainLogIn">
+        <div id="mainBoard">
+          <span>친구들과 사진과 동영상을 보려면 가입하세요.</span>
+          <input type="button" value="Facebook으로 로그인" onclick="window.location.href='https://facebook.com';">
+          <hr>
           <input
             type="text"
-            placeholder="전화번호, 사용자 이름 또는 이메일"
+            placeholder=" 휴대폰 번호 또는 이메일 주소"
             onchange="handleInput(event)"
           />
           <input
-            type="password"
-            placeholder="비밀번호"
+            type="name"
+            placeholder=" 성명"
             onchange="handleInput(event)"
           />
-          <input id="logIn_button" type="button" value="로그인" />
-        </div>
-        <div id="extraLogIn">
-          <a href="https://facebook.com" target="_blank"
-            ><img src="facebook.png"
-          /></a>
-          <a href="https://www.instagram.com/accounts/password/reset/"
-            >비밀번호를 잊으셨나요?</a
-          >
+          <input
+                  type="username"
+                  placeholder=" 전화번호, 사용자 이름 또는 이메일"
+                  onchange="handleInput(event)"
+          />
+          <input
+                  type="password"
+                  placeholder=" 비밀번호"
+                  onchange="handleInput(event)"
+          />
+          <span class="font">저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드했을 수도 있습니다. <a href="https://www.facebook.com/help/instagram/261704639352628 ">더 알아보기</a></span>
+          <input id="logIn_button" type="button" value="가입" />
         </div>
       </div>
       <div id="addAccount">

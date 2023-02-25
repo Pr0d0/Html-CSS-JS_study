@@ -1,4 +1,6 @@
 body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,15 +8,15 @@ body {
   background-color: #dbdbdb;
   margin: 0;
   font-weight: bold;
+  overflow: auto;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #main {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -22,39 +24,56 @@ a {
   background-color: #dbdbdb;
 }
 
-#logInContent {
+#mainContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 350px;
-  height: 400px;
+  height: 80%;
   border: solid 1px rgb(161, 160, 160);
   background-color: white;
+  padding-top: 10px;
+  margin-top: 100px;
 }
 
-#logInContent #mainLogIn {
+#mainContent #mainBoard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: solid 2px #dbdbdb;
-  margin: 17px;
+  margin: 20px;
   padding: 20px;
 }
 
-#logInContent #mainLogIn input {
+#mainContent #mainBoard input{
   width: 268px;
   height: 38px;
-  margin: 8px;
+  margin: 5px;
   border: solid 1px #d8d8d8;
-  border-radius: 1px;
-  background-color: #fafafa;
+  outline: none;
 }
 
-#logInContent #mainLogIn input[type="button"] {
+
+#mainContent input[type=button] {
   background-color: #4db5f9;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
 }
+
+#mainContent #mainBoard .font {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+#mainContent #mainBoard .font a {
+  font-weight: bold;
+  color: #17629e;
+}
+
 
 #extraLogIn {
   display: flex;
@@ -100,4 +119,11 @@ footer {
 
 footer a {
   color: gray;
+}
+
+hr {
+  background-color: gray;
+  width: 268px;
+  height: 1px;
+  border: 0;
 }
